@@ -97,7 +97,7 @@ int main() {                          //Starten des Hauptprogramms
         if (antwort.rfind("Fehler:", 0) == 0) {
             std::cerr << "(vom Arduino): " << antwort << "\n";  // Wenn ja: Fehlermeldung ausgeben
             logfile << "Eingabe: " << std::string(eingabe.c_str(), eingabe.size() - 1)
-                << " => Ergebnis: " << antwort << "\n";    // Ingabe und Fehler im Log vermerken
+                << " => Ergebnis: " << antwort << "\n";    // Eingabe und Fehler im Log vermerken
         }
         else {                          // Liegt keine Fehlermeldung vor:
             logfile << "Eingabe: " << std::string(eingabe.c_str(), eingabe.size() - 1)
